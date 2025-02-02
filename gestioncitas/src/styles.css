@@ -1,0 +1,127 @@
+/* General Layout */
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.left-side {
+  width: 60%;
+  background-image: url('https://i.pinimg.com/originals/cd/e2/9e/cde29ec855225656a3fa4d5f4b01227e.gif');
+  background-size: cover;
+  background-position: center;
+}
+
+.right-side {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white; /* Fondo blanco */
+}
+
+/* Contenedor principal */
+.login-container {
+  text-align: center;
+  width: 100%;
+}
+
+/* Tarjeta de login más grande y en turquesa */
+.login-card {
+  background: linear-gradient(135deg, #49A5A5, #71a69c); /* Degradado en turquesa */
+  padding: 30px; /* Más espacio */
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  width: 350px; /* Más ancho */
+  margin: auto;
+}
+
+/* Avatares */
+.avatars {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 70px; /* Más grandes */
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* Campos de entrada */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.input-group .icon {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+}
+
+/* Botones */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 48%;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.login-btn {
+  background: #1e3c72;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #162c5a;
+}
+
+.cancel-btn {
+  background: #777;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #555;
+}
+
+/* Links */
+.links {
+  margin-top: 15px;
+}
+
+.links a {
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 25px;
+  font-size: 14px;
+  color: white;
+}
