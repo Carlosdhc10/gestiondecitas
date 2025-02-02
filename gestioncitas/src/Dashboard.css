@@ -1,0 +1,126 @@
+/* Contenedor principal */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5; /* Fondo gris claro */
+}
+
+/* Sidebar (Menú lateral) */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo del calendario */
+.react-calendar {
+  width: 600px; /* Más grande */
+  max-width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  font-size: 18px;
+}
+
+/* Día actual */
+.react-calendar__tile--now {
+  background: #3498db !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
+/* Día seleccionado */
+.react-calendar__tile--active {
+  background: #2ecc71 !important;
+  color: white !important;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Días con citas */
+.cita-dia {
+  background: #e74c3c !important;
+  color: white !important;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Contenedor de citas del día */
+.citas-container {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: left;
+}
+
+/* Título de la sección de citas */
+.citas-container h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Lista de citas */
+.citas-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.citas-container li {
+  background: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Si no hay citas */
+.citas-container p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Íconos en el menú */
+.menu-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}

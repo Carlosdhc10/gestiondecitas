@@ -15,6 +15,7 @@ function Login() {
       const { data } = await axios.post("http://localhost:5000/login", form);
       localStorage.setItem("token", data.token);
       alert("Inicio de sesión exitoso");
+      navigate("/dashboard"); // Redirigir al Dashboard
     } catch (error) {
       alert("Error en el login");
     }

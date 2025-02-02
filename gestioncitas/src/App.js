@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Register from "./Register";
 import Login from "./Login";
+import Dashboard from "./Dashboard";
+
 
 function App() {
   return (
@@ -8,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} /> {/* Acceso directo */}
       </Routes>
     </Router>
   );
