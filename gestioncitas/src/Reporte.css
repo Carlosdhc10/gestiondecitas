@@ -1,0 +1,28 @@
+.reporte-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Tarjetas de resumen */
+  .resumen {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .pendiente { background: #f39c12; } /* Naranja */
+  .confirmada { background: #2ecc71; } /* Verde */
+  .cancelada { background: #e74c3c; } /* Rojo */
+  .total { background: #34495e; } /* Azul oscuro */
+  
